@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-b
+  datasource:
+    url: jdbc:postgresql://localhost:5432/service_b_db
+    username: service_b_user
+    password: service_b_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8082
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic: service-b-topic

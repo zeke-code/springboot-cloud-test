@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: service-a
+  datasource:
+    url: jdbc:mysql://localhost:3306/service_a_db
+    username: service_a_user
+    password: service_a_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: rabbitmq_user
+  password: rabbitmq_password
