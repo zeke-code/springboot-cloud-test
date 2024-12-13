@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: global-config
   cloud:
     config:
       allow-override: true
@@ -11,9 +9,4 @@ logging:
     root: INFO
     org.springframework.web: DEBUG
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
+message: "If you're seeing this, global configuration has been applied"
